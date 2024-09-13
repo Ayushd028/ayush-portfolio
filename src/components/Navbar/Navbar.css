@@ -1,0 +1,153 @@
+/* General Navbar Styles */
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: ghostwhite;
+}
+
+/* Navbar Content Styles */
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.profile-pic {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.highlight {
+  color: green;
+  font-size: 1.7rem;
+  margin-left: 2px;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: inherit;
+  margin-top: 0;
+  text-wrap: nowrap;
+  margin-left: 40px;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+
+.theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation List Styles */
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  color: green;
+}
+
+/* Mobile Menu Styles */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background-color: inherit;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list.mobile-only {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.divider {
+  color: white;
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

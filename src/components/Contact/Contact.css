@@ -1,0 +1,94 @@
+/* Contact.css */
+
+/* Center the container horizontally */
+.container {
+    max-width: 900px;
+    margin: 5rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Style the form container */
+  .form-container {
+    background-color: #f9fafb; /* Light gray background */
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  /* Style the title and subtitle */
+  .title, .subtitle {
+    text-align: center; /* Center align text */
+    margin-bottom: 1.5rem; /* Margin bottom */
+    
+  }
+  
+  .title {
+    font-size: 2rem; /* Larger font size for the title */
+    font-weight: 700; /* Bold font weight */
+    color: #333; /* Dark gray color */
+  }
+  
+  .subtitle {
+    font-size: 1rem; /* Smaller font size for the subtitle */
+    color: #666; /* Medium gray color */
+    
+  }
+  
+  /* Style the form elements */
+  .form-group {
+    margin-bottom: 1.5rem; /* Margin bottom for form groups */
+  }
+  
+  .label {
+    display: block;
+    font-size: 1rem; /* Font size for labels */
+    font-weight: 600; /* Semi-bold font weight */
+    color: #444; /* Dark gray color */
+    margin-bottom: 0.5rem; /* Margin bottom */
+  }
+  
+  .input, .textarea {
+    width: 100%; /* Full width */
+    padding: 0.75rem; /* Padding */
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 0.5rem; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    color: #333; /* Text color */
+  }
+  
+  .input:focus, .textarea:focus {
+    border-color: #4f46e5; /* Focus border color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); /* Focus shadow */
+  }
+  
+  .textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 150px; /* Minimum height */
+  }
+  
+  .error-message {
+    color: #ef4444; /* Red color for error messages */
+    font-size: 0.875rem; /* Smaller font size */
+    margin-top: 0.25rem; /* Margin top */
+  }
+  
+  /* Style the submit button */
+  .submit-button {
+    background-color: #4f46e5; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.75rem 1.5rem; /* Padding */
+    font-size: 1rem; /* Font size */
+    font-weight: 600; /* Semi-bold font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+  }
+  
+  .submit-button:hover {
+    background-color: #4338ca; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
