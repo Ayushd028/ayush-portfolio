@@ -36,9 +36,9 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* Ensures the button stays at the bottom */
     width: 300px; /* Set a fixed width for all cards */
-    height: 450px; /* Set a fixed height for all cards */
+    height: auto; /* Set height to auto to accommodate varying content lengths */
   }
   
   .project-card:hover {
@@ -59,8 +59,8 @@
   
   .project-info {
     padding: 16px;
-    flex-grow: 1;
-  }
+    flex-grow: 1; /* Allows the info section to take up available space */
+}
   
   .project-title {
     font-size: 1.25rem;
@@ -76,26 +76,26 @@
   }
   
   .project-link {
-    /* padding:15px; */
-    margin: 10px;
-  }
+    padding: 0 16px 16px;
+}
   
-  .source-code-button {
-    display: block;
-    width: 100%;
-    text-align: center;
-    background: linear-gradient(to right, #3b82f6, #8b5cf6); /* Tailwind's blue-500 to purple-500 */
-    color: #ffffff;
-    font-weight: bold;
-    padding: 8px;
-    border-radius: 8px;
-    text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .source-code-button:hover {
-    background: linear-gradient(to right, #2563eb, #7e22ce); /* Tailwind's blue-600 to purple-600 */
-  }
+.source-code-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.source-code-button:hover {
+  background: linear-gradient(to right, #2563eb, #7e22ce);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
   
   .projects-divider {
     margin-top: 16px;

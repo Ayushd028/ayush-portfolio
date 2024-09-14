@@ -3,6 +3,7 @@ import E_Commerce from "../../assets/eCommerce.png";
 import Daily from "../../assets/dailyDigest.png";
 import MedAssist from "../../assets/MedAssist.jpg";
 import Portfolio from "../../assets/Portfolio.png";
+import Bookly from "../../assets/Bookly.png";
 import "./Projects.css";
 
 function ProjectCard({ logo, name, link, desc }) {
@@ -34,15 +35,15 @@ function Projects() {
       id: 1,
       logo: Daily,
       name: "Daily Digest - Daily Dose of News",
-      link: "#",
+      link: "https://github.com/Ayushd028/Daily-Digest",
       desc: "A dynamic news app that brings you top headlines from various categories right to your fingertips. From handling APIs to designing a seamless user experience.",
     },
     {
       id: 2,
       logo: E_Commerce,
-      name: "E-Commerce Website",
-      link: "#",
-      desc: "This website is carefully created to make it easy for users to buy sports equipment online, whether they’re looking for new or used ones. The site is designed to be easy to use, with secure payments.",
+      name: "Sports Zone",
+      link: "https://github.com/Ayushd028/Eshop",
+      desc: "The SportZone frontend is meticulously designed to provide users with a seamless and enjoyable shopping experience for both new and used sports equipment. The focus is on creating an intuitive and easy-to-navigate interface that ensures users can browse, compare, and purchase products with minimal effort.",
     },
     {
       id: 3,
@@ -55,8 +56,15 @@ function Projects() {
       id: 4,
       logo: Portfolio,
       name: "My Portfolio Website",
-      link: "#",
+      link: "https://github.com/Ayushd028/Portfolio",
       desc: "This portfolio project highlights my expertise in Web development, showcasing my skills in React. Explore my work with the Web Developer, including dynamic web applications and innovative solutions in machine learning and education.",
+    },
+    {
+      id: 4,
+      logo: Bookly,
+      name: "Bookly",
+      link: "https://github.com/Ayushd028/Books.git",
+      desc: "The BookStore frontend is designed to provide an intuitive, engaging, and visually appealing experience for book lovers and casual readers alike. It serves as a dynamic and user-friendly interface that allows customers to browse, search, and purchase books effortlessly.",
     },
   ];
 
