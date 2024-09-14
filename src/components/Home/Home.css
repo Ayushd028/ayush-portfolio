@@ -1,3 +1,22 @@
+/* Mobile-specific styles for typewriter effect */
+@media (max-width: 767px) {
+  .typewriter-container {
+    font-size: 4vw; /* Scale the font size based on screen width */
+    gap: 5px; /* Reduce gap between text elements */
+    flex-wrap: wrap; /* Allow the text to wrap on smaller screens */
+    max-width: 100%; /* Make sure the container doesn't overflow */
+  }
+
+  .typewriter-container .text-red-700 {
+    font-size: 4vw; /* Scale down the typewriter text to fit mobile screens */
+    white-space: normal; /* Ensure the text breaks and wraps */
+  }
+
+  .intro-text {
+    margin-right: 0; /* Remove right margin for better alignment on mobile */
+  }
+}
+
 /* General Section Styling */
 body {
   margin: 0;
@@ -33,7 +52,7 @@ body {
   gap: 20px; /* Reduced gap between content items */
   justify-content: space-between;
   align-items: center;
-  
+
   /* Align content to center, and change direction for larger screens */
   @media (min-width: 768px) {
     flex-direction: row;
@@ -82,6 +101,8 @@ body {
   gap: 10px;
   font-size: 2rem;
   margin-top: 20px;
+  flex-wrap: wrap; /* Allows text to wrap if necessary */
+  max-width: 100%; /* Ensures it won't overflow */
 }
 
 .typewriter-container h1 {
@@ -90,7 +111,8 @@ body {
 }
 
 .typewriter-container .text-red-700 {
-  font-size: 35px; /* Make sure the typewriter font size matches the h1 */
+  font-size: 2rem; /* Ensure typewriter text size matches the container */
+  white-space: nowrap; /* Prevents breaking the text initially */
 }
 
 .intro-text {
@@ -148,7 +170,7 @@ body {
   max-width: 450px;
   margin: 2rem;
   margin-top: 5rem;
-  margin-right: 6rem; 
+  margin-right: 6rem;
 
   /* Align the profile image to the right */
   @media (min-width: 768px) {
@@ -187,7 +209,13 @@ body {
   }
 
   .typewriter-container {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Further reduce the font size on mobile */
+    flex-wrap: wrap; /* Allow text to wrap on mobile */
+  }
+
+  .typewriter-container .text-red-700 {
+    font-size: 1.2rem; /* Ensure typewriter text is small enough on mobile */
+    white-space: normal; /* Allow typewriter text to wrap */
   }
 
   .profile-img {

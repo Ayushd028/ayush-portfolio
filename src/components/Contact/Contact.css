@@ -137,17 +137,39 @@
 @media (max-width: 480px) {
   .container {
     padding: 0 0.5rem; /* Reduce padding */
+    margin: 2rem auto; /* Adjust margin for smaller screens */
   }
 
   .title {
     font-size: 1.75rem; /* Slightly smaller title size */
+    line-height: 1.2;   /* Adjust line height for smaller text */
   }
 
   .subtitle {
     font-size: 0.875rem; /* Slightly smaller subtitle size */
+    line-height: 1.2;    /* Adjust line height for better readability */
+    margin-bottom: 1rem; /* Reduce bottom margin */
   }
 
   .form-container {
-    padding: 1.5rem;
+    padding: 1.5rem;     /* Reduce padding for the form container */
+    width: 100%;         /* Ensure form takes full width on small screens */
+    box-shadow: none;    /* Remove box-shadow on small screens to avoid visual clutter */
+  }
+
+  .form-group {
+    margin-bottom: 1rem; /* Reduce margin between form fields */
+  }
+
+  .input,
+  .textarea {
+    padding: 0.65rem;    /* Slightly reduce padding */
+    font-size: 0.9rem;   /* Reduce font size for inputs and textarea */
+  }
+
+  .submit-button {
+    width: 100%;         /* Ensure submit button takes full width */
+    padding: 0.65rem 1rem; /* Adjust padding */
+    font-size: 0.9rem;   /* Reduce font size */
   }
 }
