@@ -13,7 +13,8 @@
   }
 
   .intro-text {
-    margin-right: 0; /* Remove right margin for better alignment on mobile */
+    margin-right: 0; 
+    text-align: justify;/* Remove right margin for better alignment on mobile */
   }
 }
 
@@ -122,10 +123,12 @@ body {
   margin-right: 50px;
   font-family: "Playfair Display", serif;
   font-weight: 300;
+  text-align: justify;
 
   @media (max-width: 767px) {
     text-align: left; /* Align text to the left on small screens */
     margin-right: 20px;
+    text-align: justify;
   }
 }
 

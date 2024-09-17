@@ -43,6 +43,7 @@
 
   .about-description {
     font-size: 16px;
+    text-align: justify;
   }
 }
 
@@ -62,6 +63,7 @@
 
   .about-description {
     font-size: 20px;
+    text-align: justify;
   }
 }
 
@@ -80,5 +82,6 @@
 
   .about-description {
     font-size: 22px;
+    text-align: justify;
   }
 }
