@@ -71,7 +71,7 @@ function Projects() {
   return (
     <div className="projects-container" name="Projects">
       <div className="projects-header">
-        <h2 className="projects-subtitle">What I've Built</h2>
+        <h2 className="projects-subtitle">Notable Projects</h2>
       </div>
       <div className="projects-grid">
         {cardItems.map((item) => (
