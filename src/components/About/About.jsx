@@ -5,7 +5,7 @@ function About() {
   return (
     <>
       <div className="about-container" id="About">
-        <h2 className="about-subtitle">Who I Am</h2>
+        <h2 className="about-subtitle">Who Am I</h2>
         <p className="about-description">
           I am a recent <b>B.Tech</b> graduate in <b>Information Technology</b>{" "}
           from <b>United College of Engineering Research</b>. My academic
