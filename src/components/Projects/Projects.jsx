@@ -56,7 +56,7 @@ function Projects() {
       id: 4,
       logo: Portfolio,
       name: "My Portfolio Website",
-      link: "https://github.com/Ayushd028/Portfolio",
+      link: "https://github.com/Ayushd028/ayush-portfolio",
       desc: "This portfolio project highlights my expertise in Web development, showcasing my skills in React. Explore my work with the Web Developer, including dynamic web applications and innovative solutions in machine learning and education.",
     },
     {
