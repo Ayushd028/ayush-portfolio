@@ -36,7 +36,7 @@ function Skills() {
   return (
     <div className="skills-container" name="Skills">
       <div className="skills-header">
-{/*         <h1 className="skills-title">SKILLS</h1> */}
+        
         <h2 className="skills-subtitle">SKILLS</h2>
       </div>
       <div className="skills-grid">
